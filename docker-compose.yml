@@ -3,4 +3,5 @@ services:
   squid-docker-alpine:
     build: .
     ports:
-      - "3128:3128"
+      #- "3128:3128"
+      - "8080:8080"

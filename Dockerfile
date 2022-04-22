@@ -9,7 +9,8 @@ RUN rm -rf /var/cache/apk/*
 ADD squid.conf /etc/squid/squid.conf
 ADD docker_entrypoint.sh /docker_entrypoint.sh
 
-EXPOSE 3128
+#EXPOSE 3128
+EXPOSE 8080
 
 ENTRYPOINT ["/docker_entrypoint.sh"]
 
